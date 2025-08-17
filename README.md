@@ -41,3 +41,17 @@ Menggunakan Bootstrap untuk UI/UX yang lebih baik.
 
 Delin Herliana Pasha
 
+🚀 Cara Menjalankan Project
+
+Clone repository ini:
+git clone https://github.com/DelinGithub20/sistemcutikaryawan.git
+cd sistemcutikaryawan/sistemcutikaryawan
+
+Jalankan migrasi database:
+dotnet ef database update
+
+Jalankan aplikasi:
+dotnet run
+
+Buka di browser:
+http://localhost:5264/
