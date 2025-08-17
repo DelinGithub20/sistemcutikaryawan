@@ -1,0 +1,37 @@
+@model sistemcutikaryawan.Models.Cuti
+
+<div class="container mt-4">
+    <div class="card card-custom p-4">
+        <h2 class="mb-4">➕ Tambah Cuti</h2>
+
+        <form asp-action="Create">
+            <div class="mb-3">
+                <label class="form-label">Nama Karyawan</label>
+                <input asp-for="NamaKaryawan" class="form-control" />
+                <span asp-validation-for="NamaKaryawan" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tanggal Mulai</label>
+                <input asp-for="TanggalMulai" type="date" class="form-control" />
+                <span asp-validation-for="TanggalMulai" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tanggal Selesai</label>
+                <input asp-for="TanggalSelesai" type="date" class="form-control" />
+                <span asp-validation-for="TanggalSelesai" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Alasan</label>
+                <textarea asp-for="Alasan" class="form-control"></textarea>
+                <span asp-validation-for="Alasan" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-custom">Simpan</button>
+            <a asp-action="Index" class="btn btn-secondary btn-custom">Kembali</a>
+        </form>
+    </div>
+</div>
+

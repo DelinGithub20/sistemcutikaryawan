@@ -1,0 +1,24 @@
+@model sistemcutikaryawan.Models.Cuti
+
+<div class="container mt-4">
+    <div class="card card-custom p-4">
+        <h2 class="mb-4">ℹ️ Detail Pengajuan Cuti</h2>
+
+        <dl class="row">
+            <dt class="col-sm-3">Nama Karyawan</dt>
+            <dd class="col-sm-9">@Model.NamaKaryawan</dd>
+
+            <dt class="col-sm-3">Tanggal Mulai</dt>
+            <dd class="col-sm-9">@Model.TanggalMulai.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Tanggal Selesai</dt>
+            <dd class="col-sm-9">@Model.TanggalSelesai.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Alasan</dt>
+            <dd class="col-sm-9">@Model.Alasan</dd>
+        </dl>
+
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-custom">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary btn-custom">Kembali</a>
+    </div>
+</div>
