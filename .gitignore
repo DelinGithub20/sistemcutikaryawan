@@ -1,0 +1,29 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.vspscc
+*.suo
+*.vssscc
+
+# Visual Studio Code settings
+.vscode/
+
+# Database (SQLite)
+*.db
+
+# Logs
+*.log
+
+# Publish output
+/publish/
+/wwwroot/dist/
+/wwwroot/lib/
+
+# Others
+*.dll
+*.exe
+*.pdb
+*.cache
